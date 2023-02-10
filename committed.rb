@@ -5,7 +5,7 @@
 class Committed < Formula
   desc "WYSIWYG Git commit editor that helps improve the quality of your commits by showing you the layout in the same format as git log"
   homepage "https://github.com/mikelorant/committed"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Committed < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mikelorant/committed/releases/download/v0.8.0/committed_0.8.0_darwin_arm64.tar.gz"
-      sha256 "f0d3cdef79aa776604ca066f49d91e26a3b32cb02a2e76391e420af1d13bfd8f"
+      url "https://github.com/mikelorant/committed/releases/download/v0.9.0/committed_0.9.0_darwin_arm64.tar.gz"
+      sha256 "c7380c3b57f2602b508dc8e115037be26be64e7176c7058530b054aa1651c716"
 
       def install
         bin.install "committed"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mikelorant/committed/releases/download/v0.8.0/committed_0.8.0_darwin_amd64.tar.gz"
-      sha256 "517ef863de1a1addb721faa29a6d7670ddb2f6756d695df9dfe540e9e8880d66"
+      url "https://github.com/mikelorant/committed/releases/download/v0.9.0/committed_0.9.0_darwin_amd64.tar.gz"
+      sha256 "65ca2b8102756f60ceba5fc98201b01eba34fd5ed7ce0e7ed675fe8f39382b0f"
 
       def install
         bin.install "committed"
