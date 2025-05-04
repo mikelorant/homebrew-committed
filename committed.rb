@@ -13,7 +13,7 @@ class Committed < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mikelorant/committed/releases/download/v0.12.0/committed_0.12.0_darwin_amd64.tar.gz"
-      sha256 "1cdab2db13c2e8c0d49c1816c3abab8a6fc82f06913aeb778178cea33bb7cf5e"
+      sha256 "b59c611b96b649c6d81763fec6a11546faf0fc19ca30e6ad907e0c89266c58e3"
 
       def install
         bin.install "committed"
@@ -21,7 +21,7 @@ class Committed < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mikelorant/committed/releases/download/v0.12.0/committed_0.12.0_darwin_arm64.tar.gz"
-      sha256 "96c982e4f520895e3e900cbb14ac06b326d0083036104836ab31b12e48a39421"
+      sha256 "79cd2e7b591da3f2916456188238857275d4783de462aff325a5df6b4e25b5e9"
 
       def install
         bin.install "committed"
@@ -32,14 +32,14 @@ class Committed < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/mikelorant/committed/releases/download/v0.12.0/committed_0.12.0_linux_amd64.tar.gz"
-      sha256 "9e631d01c9ba414f8d964dfb0d6af0cd7104b44f85d27ae5abd43d5753648012"
+      sha256 "339eec2dfd497fcc974262c0a5c6c6458d876135ec7691321d7b9cd6b53e59e8"
       def install
         bin.install "committed"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/mikelorant/committed/releases/download/v0.12.0/committed_0.12.0_linux_arm64.tar.gz"
-      sha256 "0ab6324c847fca969ca21a41aca2379911b60ff24b2520e09c6bcc0cc6ab4e90"
+      sha256 "ba536a0ee7bb1265d4508db2e753c197e9b3d1c9261f1ac24fe73826bbaa75cc"
       def install
         bin.install "committed"
       end
