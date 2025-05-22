@@ -5,23 +5,23 @@
 class Committed < Formula
   desc "WYSIWYG Git commit editor that helps improve the quality of your commits by showing you the layout in the same format as git log"
   homepage "https://github.com/mikelorant/committed"
-  version "0.14.0"
+  version "0.14.1"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mikelorant/committed/releases/download/v0.14.0/committed_0.14.0_darwin_amd64.tar.gz"
-      sha256 "8cacdcaa96869f4206e508f10eabb2077cea6735e5960cc877cd9c6a9348eed5"
+      url "https://github.com/mikelorant/committed/releases/download/v0.14.1/committed_0.14.1_darwin_amd64.tar.gz"
+      sha256 "58477d5a69032bb9f9af5833a68450536505478ba57ed4aa6bc717307b177790"
 
       def install
         bin.install "committed"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mikelorant/committed/releases/download/v0.14.0/committed_0.14.0_darwin_arm64.tar.gz"
-      sha256 "029daa5b6f4dbe3bea64623baf8e9d06e72e2de4d34a99f74f77d96de48a056a"
+      url "https://github.com/mikelorant/committed/releases/download/v0.14.1/committed_0.14.1_darwin_arm64.tar.gz"
+      sha256 "c8be04eddf87d4168efa68411c56058f95297aa2ab6883bd3c4819097709e048"
 
       def install
         bin.install "committed"
@@ -31,15 +31,15 @@ class Committed < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mikelorant/committed/releases/download/v0.14.0/committed_0.14.0_linux_amd64.tar.gz"
-      sha256 "79b229ffac259d172d1937de9397f88f193734e0c309dc4ec63815d7430e1f30"
+      url "https://github.com/mikelorant/committed/releases/download/v0.14.1/committed_0.14.1_linux_amd64.tar.gz"
+      sha256 "231108ff38f7afbe81f9342274f0fe8d56d0f3e68c7bbaa0e7cd87e5b9213788"
       def install
         bin.install "committed"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/mikelorant/committed/releases/download/v0.14.0/committed_0.14.0_linux_arm64.tar.gz"
-      sha256 "a8a348f396a85b1e112ebc1b6f3f575519b556076a784154ff16376788c21eb1"
+      url "https://github.com/mikelorant/committed/releases/download/v0.14.1/committed_0.14.1_linux_arm64.tar.gz"
+      sha256 "5a651ae2cd6d0f8fcc27a911414d059dc676eeb749b2d4d6ded3336e8e468721"
       def install
         bin.install "committed"
       end
